@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        {% for meme in memes %}
+        <h4>{{meme["memeid"]}}</h4>
+        {{meme["name"]}} <br>
+        {{meme["caption"]}}<br>
+        {{meme["url"]}}<br>
+        <hr>
+
+        {% endfor %}
+</body>
+</html>
